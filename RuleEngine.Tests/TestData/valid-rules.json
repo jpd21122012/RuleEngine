@@ -1,0 +1,10 @@
+[
+  {
+    "name": "TestRule",
+    "description": "Test rule",
+    "priority": 1,
+    "isEnabled": true,
+    "condition": "true",
+    "action": ""
+  }
+]

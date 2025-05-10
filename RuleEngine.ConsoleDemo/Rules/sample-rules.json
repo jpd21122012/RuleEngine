@@ -1,0 +1,18 @@
+[
+  {
+    "name": "AgeCheck",
+    "description": "Verify user is adult",
+    "priority": 1,
+    "isEnabled": true,
+    "condition": "ctx.GetInt(\"Age\") >= 18",
+    "action": "ctx.Set(\"IsAdult\", true)"
+  },
+  {
+    "name": "PremiumDiscount",
+    "description": "Apply 10% discount",
+    "priority": 2,
+    "isEnabled": true,
+    "condition": "ctx.GetBool(\"IsPremiumMember\") && ctx.GetDecimal(\"OrderTotal\") > 100",
+    "action": "ctx.Set(\"Discount\", ctx.GetDecimal(\"OrderTotal\") * 0.1m)"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "InvalidRule",
+    "description": "This will fail",
+    "priority": 1,
+    "isEnabled": true,
+    "condition": "invalid expression!",
+    "action": ""
+  }
+]
